@@ -29,7 +29,10 @@ jobs:
 
       - name: Build Android Project
         run: |
+          # 1. Sync the web assets to the android project
           npx capacitor sync android
+          
+          # 2. Go into android folder and build
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug
