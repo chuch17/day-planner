@@ -29,16 +29,14 @@ jobs:
 
       - name: Build Android Project
         run: |
-          # 1. Sync the web assets to the android project
+          # 1. Clean up any previous syncs
           npx capacitor sync android
           
           # 2. Go into android folder and build
           cd android
+          
+          # 3. Ensure gradlew is executable
           chmod +x gradlew
-          ./gradlew assembleDebug
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: jarvis-satellite-debug
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          
+          # 4. Build the APK
+          ./gradlew assembleDebug --stacktrace
