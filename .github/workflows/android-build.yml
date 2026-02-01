@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install Shell Tools
         run: |
@@ -25,18 +25,14 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '17'
+          java-version: '21'
 
       - name: Build Android Project
         run: |
-          # 1. Clean up any previous syncs
+          # 1. Sync the web assets
           npx capacitor sync android
           
-          # 2. Go into android folder and build
+          # 2. Build the APK
           cd android
-          
-          # 3. Ensure gradlew is executable
           chmod +x gradlew
-          
-          # 4. Build the APK
           ./gradlew assembleDebug --stacktrace
