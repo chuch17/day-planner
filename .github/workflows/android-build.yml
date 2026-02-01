@@ -17,17 +17,9 @@ jobs:
         with:
           node-version: 18
 
-      - name: Install Dependencies
+      - name: Install Shell Tools
         run: |
-          npm install --no-package-lock --legacy-peer-deps
           npm install @capacitor/core @capacitor/cli @capacitor/android --legacy-peer-deps
-          npm install @picovoice/porcupine-android @picovoice/pvrecorder-android --legacy-peer-deps
-
-      - name: Initialize Capacitor
-        run: |
-          if [ ! -d "android" ]; then
-            npx cap add android
-          fi
 
       - name: Set up Java
         uses: actions/setup-java@v4
