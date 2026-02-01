@@ -1,0 +1,1158 @@
+{
+  "2025-12-10": [
+    {
+      "id": 1765392270760,
+      "dateKey": "2025-12-10",
+      "startHour": null,
+      "startMin": null,
+      "duration": 30,
+      "type": "flexible",
+      "color": "#3788d8",
+      "occupiesTime": true,
+      "reminderType": "none"
+    },
+    {
+      "dateKey": "2025-12-10",
+      "title": "drink water",
+      "startHour": 12,
+      "startMin": 30,
+      "duration": 15,
+      "type": "fixed",
+      "color": "#65c0d7",
+      "occupiesTime": false,
+      "reminderType": "checkin",
+      "checkInInterval": 5,
+      "id": 1765395252938
+    },
+    {
+      "dateKey": "2025-12-10",
+      "title": "drink water",
+      "startHour": 12,
+      "startMin": 45,
+      "duration": 60,
+      "type": "fixed",
+      "color": "#65c0d7",
+      "occupiesTime": false,
+      "reminderType": "checkin",
+      "checkInInterval": 5,
+      "id": 1765396290382
+    },
+    {
+      "dateKey": "2025-12-10",
+      "title": "lunch",
+      "startHour": 15,
+      "startMin": 0,
+      "duration": 15,
+      "type": "fixed",
+      "color": "#6332c5",
+      "occupiesTime": true,
+      "reminderType": "checkin",
+      "checkInInterval": 5,
+      "id": 1765404286709
+    }
+  ],
+  "2025-12-12": [
+    {
+      "dateKey": "2025-12-12",
+      "title": "drink water",
+      "startHour": 16,
+      "startMin": 30,
+      "duration": 60,
+      "type": "fixed",
+      "color": "#808080",
+      "occupiesTime": false,
+      "reminderType": "checkin",
+      "checkInInterval": 5,
+      "id": 1765581967649,
+      "completed": true
+    }
+  ],
+  "2025-12-15": [
+    {
+      "dateKey": "2025-12-15",
+      "title": "lunch",
+      "startHour": 12,
+      "startMin": 15,
+      "duration": 120,
+      "type": "fixed",
+      "color": "#808080",
+      "occupiesTime": true,
+      "reminderType": "checkin",
+      "checkInInterval": 5,
+      "id": 1765826805783,
+      "completed": true
+    },
+    {
+      "dateKey": "2025-12-15",
+      "title": "drink water",
+      "startHour": 13,
+      "startMin": 15,
+      "duration": 60,
+      "type": "fixed",
+      "color": "#808080",
+      "occupiesTime": false,
+      "reminderType": "checkin",
+      "checkInInterval": 5,
+      "id": 1765829959704,
+      "completed": true
+    },
+    {
+      "dateKey": "2025-12-15",
+      "title": "drink water",
+      "startHour": 13,
+      "startMin": 30,
+      "duration": 60,
+      "type": "fixed",
+      "color": "#808080",
+      "occupiesTime": false,
+      "reminderType": "checkin",
+      "checkInInterval": 5,
+      "id": 1765830822351,
+      "completed": true
+    },
+    {
+      "dateKey": "2025-12-15",
+      "title": "workout",
+      "startHour": 13,
+      "startMin": 45,
+      "duration": 60,
+      "type": "fixed",
+      "color": "#c44031",
+      "occupiesTime": true,
+      "reminderType": "none",
+      "checkInInterval": null,
+      "id": 1765830893727
+    }
+  ],
+  "2025-12-16": [
+    {
+      "dateKey": "2025-12-16",
+      "title": "workout",
+      "startHour": 14,
+      "startMin": 30,
+      "duration": 60,
+      "type": "fixed",
+      "color": "#6332c5",
+      "occupiesTime": true,
+      "reminderType": "none",
+      "checkInInterval": null,
+      "id": 1765919917594
+    },
+    {
+      "dateKey": "2025-12-16",
+      "title": "drink water",
+      "startHour": 20,
+      "startMin": 15,
+      "duration": 60,
+      "type": "fixed",
+      "color": "#808080",
+      "occupiesTime": false,
+      "reminderType": "checkin",
+      "checkInInterval": 5,
+      "id": 1765940837514,
+      "completed": true
+    }
+  ],
+  "2025-12-17": [
+    {
+      "dateKey": "2025-12-17",
+      "title": "lunch",
+      "startHour": 15,
+      "startMin": 30,
+      "duration": 15,
+      "type": "fixed",
+      "color": "#6332c5",
+      "occupiesTime": true,
+      "reminderType": "none",
+      "checkInInterval": null,
+      "id": 1766010363095
+    },
+    {
+      "dateKey": "2025-12-17",
+      "title": "lunch",
+      "startHour": 11,
+      "startMin": 15,
+      "duration": 15,
+      "type": "fixed",
+      "color": "#6332c5",
+      "occupiesTime": true,
+      "reminderType": "none",
+      "checkInInterval": null,
+      "id": 1766081402289
+    }
+  ],
+  "2025-12-18": [
+    {
+      "dateKey": "2025-12-18",
+      "title": "lunch",
+      "startHour": 11,
+      "startMin": 30,
+      "duration": 15,
+      "type": "fixed",
+      "color": "#808080",
+      "occupiesTime": true,
+      "reminderType": "none",
+      "checkInInterval": null,
+      "id": 1766082301409,
+      "completed": true
+    },
+    {
+      "dateKey": "2025-12-18",
+      "title": "workout",
+      "startHour": 11,
+      "startMin": 45,
+      "duration": 30,
+      "type": "fixed",
+      "color": "#3156c4",
+      "occupiesTime": true,
+      "reminderType": "none",
+      "checkInInterval": null,
+      "id": 1766082408452
+    }
+  ],
+  "2025-12-20": [
+    {
+      "dateKey": "2025-12-20",
+      "title": "lunch",
+      "startHour": 15,
+      "startMin": 16,
+      "duration": 60,
+      "type": "fixed",
+      "color": "#808080",
+      "occupiesTime": true,
+      "reminderType": "none",
+      "checkInInterval": null,
+      "id": 1766268536310,
+      "completed": true
+    },
+    {
+      "dateKey": "2025-12-20",
+      "title": "workout",
+      "startHour": 17,
+      "startMin": 0,
+      "duration": 10,
+      "type": "fixed",
+      "color": "#808080",
+      "occupiesTime": true,
+      "reminderType": "none",
+      "checkInInterval": null,
+      "id": 1766274666694,
+      "completed": true
+    }
+  ],
+  "2026-1-17": [
+    {
+      "dateKey": "2026-1-17",
+      "title": "morning routine",
+      "startHour": 17,
+      "startMin": 13,
+      "duration": 4,
+      "type": "checklist",
+      "color": "#808080",
+      "occupiesTime": true,
+      "items": [
+        "brush teeth"
+      ],
+      "id": 1768695002305,
+      "completed": true
+    },
+    {
+      "dateKey": "2026-1-17",
+      "title": "morning routine",
+      "startHour": 17,
+      "startMin": 22,
+      "duration": 7,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": false
+        }
+      ],
+      "id": 1768695656230
+    },
+    {
+      "dateKey": "2026-1-17",
+      "title": "morning routine",
+      "startHour": 17,
+      "startMin": 55,
+      "duration": 5,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        }
+      ],
+      "id": 1768697344100
+    }
+  ],
+  "2026-1-18": [
+    {
+      "dateKey": "2026-1-18",
+      "title": "morning routine",
+      "startHour": 18,
+      "startMin": 10,
+      "duration": 15,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        },
+        {
+          "text": "get dressed",
+          "completed": true
+        }
+      ],
+      "id": 1768784012838,
+      "aiScript": {
+        "summary": "Good morning! Today's morning routine checklist consists of 3 essential tasks. Let's start with brushing your teeth.",
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "success": "Great job! Now, let's move on to showering."
+          },
+          {
+            "text": "shower",
+            "success": "Feeling refreshed? Next up is getting dressed!"
+          },
+          {
+            "text": "get dressed",
+            "success": "You're all set for the day! Congratulations, you've completed your morning routine."
+          }
+        ]
+      }
+    }
+  ],
+  "2026-1-22": [
+    {
+      "dateKey": "2026-1-22",
+      "title": "morning routine",
+      "startHour": 17,
+      "startMin": 5,
+      "duration": 5,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": false
+        },
+        {
+          "text": "shower",
+          "completed": true
+        },
+        {
+          "text": "get dressed",
+          "completed": true
+        }
+      ],
+      "id": 1769126345194,
+      "aiScript": {
+        "summary": "Good morning! You have 3 essential tasks to get your day started. First up, let's take care of brushing those teeth.",
+        "completionMessage": "Congratulations! You've completed your morning routine and are now ready to tackle the day!",
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "success": "Great job! Now it's time to get cleaned up in the shower, followed by getting dressed."
+          },
+          {
+            "text": "shower",
+            "success": "Fresh and clean! Next, let's get dressed and feeling great for the day ahead."
+          },
+          {
+            "text": "get dressed",
+            "success": "Looking sharp! You've finished your morning routine - congratulations!"
+          }
+        ]
+      }
+    },
+    {
+      "dateKey": "2026-1-22",
+      "title": "morning routine",
+      "startHour": 17,
+      "startMin": 55,
+      "duration": 10,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        },
+        {
+          "text": "get dressed",
+          "completed": true
+        }
+      ],
+      "id": 1769129140205,
+      "aiScript": {
+        "summary": "Very well, Sir. I've prepared your morning routine checklist with 3 items. Shall we start with brush teeth?",
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "success": "Excellent work on brush teeth. Next up is shower."
+          },
+          {
+            "text": "shower",
+            "success": "Excellent work on shower. Next up is get dressed."
+          },
+          {
+            "text": "get dressed",
+            "success": "That's the last one! You've successfully completed the morning routine checklist, Sir."
+          }
+        ]
+      }
+    },
+    {
+      "dateKey": "2026-1-22",
+      "title": "morning routine",
+      "startHour": 7,
+      "startMin": 18,
+      "duration": 726,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        },
+        {
+          "text": "get dressed",
+          "completed": true
+        }
+      ],
+      "id": 1769134280626,
+      "aiScript": {
+        "summary": "Very well, Sir. I've prepared your morning routine checklist with 3 items. Shall we start with brush teeth?",
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "success": "Excellent work on brush teeth. Next up is shower."
+          },
+          {
+            "text": "shower",
+            "success": "Excellent work on shower. Next up is get dressed."
+          },
+          {
+            "text": "get dressed",
+            "success": "That's the last one! You've successfully completed the morning routine checklist, Sir."
+          }
+        ]
+      }
+    }
+  ],
+  "2026-1-23": [
+    {
+      "dateKey": "2026-1-23",
+      "title": "morning routine",
+      "startHour": 12,
+      "startMin": 43,
+      "duration": 12,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        },
+        {
+          "text": "get dressed",
+          "completed": true
+        }
+      ],
+      "id": 1769197014398,
+      "aiScript": {
+        "preStartSummary": "Heads up, Sir. Your morning routine checklist starts in 5 minutes. We have 3 items to complete.",
+        "startSummary": "It is time for your morning routine, Sir. Shall we start with brush teeth?",
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "success": "Excellent work on brush teeth. Next up is shower."
+          },
+          {
+            "text": "shower",
+            "success": "Excellent work on shower. Next up is get dressed."
+          },
+          {
+            "text": "get dressed",
+            "success": "That's the last one! You've successfully completed the morning routine checklist, Sir."
+          }
+        ]
+      }
+    },
+    {
+      "dateKey": "2026-1-23",
+      "title": "morning routine",
+      "startHour": 14,
+      "startMin": 34,
+      "duration": 6,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": false
+        },
+        {
+          "text": "get dressed",
+          "completed": false
+        }
+      ],
+      "id": 1769203791985,
+      "aiScript": {
+        "preStartSummary": "Heads up, Sir. Your morning routine checklist starts in 5 minutes. We have 3 items to complete.",
+        "startSummary": "It is time for your morning routine, Sir. Shall we start with brush teeth?",
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "success": "Excellent work on brush teeth. Next up is shower."
+          },
+          {
+            "text": "shower",
+            "success": "Excellent work on shower. Next up is get dressed."
+          },
+          {
+            "text": "get dressed",
+            "success": "That's the last one! You've successfully completed the morning routine checklist, Sir."
+          }
+        ]
+      },
+      "completed": true
+    },
+    {
+      "dateKey": "2026-1-23",
+      "title": "morning routine",
+      "startHour": 15,
+      "startMin": 48,
+      "duration": 12,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": false
+        },
+        {
+          "text": "get dressed",
+          "completed": false
+        }
+      ],
+      "id": 1769208023682,
+      "aiScript": {
+        "preStartSummary": "Heads up, Sir. Your morning routine checklist starts in 5 minutes. We have 3 items to complete.",
+        "startSummary": "It is time for your morning routine, Sir. Shall we start with brush teeth?",
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "success": "Excellent work on brush teeth. Next up is shower."
+          },
+          {
+            "text": "shower",
+            "success": "Excellent work on shower. Next up is get dressed."
+          },
+          {
+            "text": "get dressed",
+            "success": "That's the last one! You've successfully completed the morning routine checklist, Sir."
+          }
+        ]
+      }
+    },
+    {
+      "dateKey": "2026-1-23",
+      "title": "morning routine",
+      "startHour": 16,
+      "startMin": 23,
+      "duration": 5,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        },
+        {
+          "text": "get dressed",
+          "completed": true
+        }
+      ],
+      "id": 1769210215058,
+      "aiScript": {
+        "preStartSummary": "Heads up, Sir. Your morning routine checklist starts in 5 minutes. We have 3 items to complete.",
+        "startSummary": "It is time for your morning routine, Sir. Shall we start with brush teeth?",
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "success": "Excellent work on brush teeth. Next up is shower."
+          },
+          {
+            "text": "shower",
+            "success": "Excellent work on shower. Next up is get dressed."
+          },
+          {
+            "text": "get dressed",
+            "success": "That's the last one! You've successfully completed the morning routine checklist, Sir."
+          }
+        ]
+      },
+      "completed": true
+    },
+    {
+      "dateKey": "2026-1-23",
+      "title": "workout",
+      "startHour": 17,
+      "startMin": 10,
+      "duration": 2,
+      "type": "fixed",
+      "color": "#6332c5",
+      "occupiesTime": true,
+      "reminderType": "none",
+      "checkInInterval": null,
+      "id": 1769212373255
+    },
+    {
+      "dateKey": "2026-1-23",
+      "title": "morning routine",
+      "startHour": 16,
+      "startMin": 55,
+      "duration": 10,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        },
+        {
+          "text": "get dressed",
+          "completed": true
+        }
+      ],
+      "id": 1769212087981,
+      "aiScript": {
+        "preStartSummary": "Heads up, Sir. Your morning routine checklist starts in 5 minutes. We have 3 items to complete.",
+        "startSummary": "It is time for your morning routine, Sir. Shall we start with brush teeth?",
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "success": "Excellent work on brush teeth. Next up is shower."
+          },
+          {
+            "text": "shower",
+            "success": "Excellent work on shower. Next up is get dressed."
+          },
+          {
+            "text": "get dressed",
+            "success": "That's the last one! You've successfully completed the morning routine checklist, Sir."
+          }
+        ]
+      },
+      "completed": true
+    }
+  ],
+  "2026-1-24": [
+    {
+      "dateKey": "2026-1-24",
+      "title": "morning routine",
+      "startHour": 21,
+      "startMin": 58,
+      "duration": 14,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        },
+        {
+          "text": "get dressed",
+          "completed": true
+        }
+      ],
+      "id": 1769315857069,
+      "aiScript": {
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "variations": [
+              "morning mouth makeover",
+              "tooth trifecta complete",
+              "dental duties discharged",
+              "ablutions accomplished",
+              "sharp smile showcased",
+              "oral onyx optimized",
+              "chompers in check"
+            ],
+            "success": "Sir, your morning routine is now augmented with a dazzling display of dental diligence - pivot to the refreshing realm of 'shower' and let the invigorating aromas ensue."
+          },
+          {
+            "text": "shower",
+            "variations": [
+              "freshened up",
+              "water woes washed away",
+              "suds surrendered",
+              "moisture mastered",
+              "rivulets resolved"
+            ],
+            "success": "Sir, your morning ablutions now complete, you've successfully transitioned into the revitalized realm of 'sharp ensemble' - time to don the attire that matches the radiant glow within!"
+          },
+          {
+            "text": "get dressed",
+            "variations": [
+              "morning garb in place",
+              "dapper attire donned",
+              "wardrobe wonder achieved",
+              "outerwear orchestrated",
+              "vestments venerated"
+            ],
+            "success": "Sir, with aplomb and finesse, your sartorial splendor is now on full display - a triumphant conclusion to this morning's meticulous routine!"
+          }
+        ],
+        "preStartSummary": "Get ready to tackle the day ahead! Our morning routine is about to kick into high gear, covering brushing teeth, showering, and getting dressed.",
+        "startSummary": "Let's dive in! First up: a quick brush with oral hygiene to get our day started on the right foot.",
+        "completionMessage": "Morning mission accomplished! You've successfully completed your morning routine - now you're ready to take on whatever the day brings."
+      },
+      "completed": true
+    },
+    {
+      "dateKey": "2026-1-24",
+      "title": "workout",
+      "startHour": 22,
+      "startMin": 18,
+      "duration": 7,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "10 push ups",
+          "completed": true
+        }
+      ],
+      "id": 1769316933606,
+      "aiScript": {
+        "itemScripts": [
+          {
+            "text": "10 push ups",
+            "variations": [
+              "finished the floorwork",
+              "completed the upper body assault",
+              "killed the push up game",
+              "mastered the downward dog descent",
+              "conquered the chest and triceps campaign"
+            ],
+            "success": "Sir, your bodily calisthenics have reached new heights - the 10 push ups challenge has been vanquished with finesse! As you bask in the glory of your physical prowess, it's only fitting to pivot to the next phase of your day, where a world of opportunities awaits."
+          }
+        ],
+        "preStartSummary": "Get ready to unleash your inner strength! Today, we're tackling a foundational workout that will have you feeling like a superhero in no time.",
+        "startSummary": "Alright, it's showtime! Let's kick things off with 10 push-ups - are you ready to get your sweat on?",
+        "completionMessage": "Woohoo, you did it! Congratulations on crushing those 10 push-ups and setting yourself up for a strong day ahead!"
+      },
+      "completed": true
+    }
+  ],
+  "2026-1-26": [
+    {
+      "dateKey": "2026-1-26",
+      "title": "morning routine",
+      "startHour": 12,
+      "startMin": 20,
+      "duration": 10,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        }
+      ],
+      "id": 1769454604181,
+      "aiScript": {
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "variations": [
+              "brush teeth",
+              "morning oral care",
+              "take out the trash in my mouth",
+              "get ready for a smile",
+              "quick brush-up",
+              "morning mouth maintenance"
+            ],
+            "success": "Tooth-tastic! That's done, Sir. Next up is shower, Sir."
+          },
+          {
+            "text": "shower",
+            "variations": [
+              "Shower time",
+              "Get cleaned up, Sir!",
+              "Time for a rinse",
+              "The morning after",
+              "Soap and serenity await",
+              "Let's get squeaky clean"
+            ],
+            "success": "Foam-tastic! Shower done, Sir. Next up is null."
+          }
+        ],
+        "preStartSummary": {
+          "text": "Sir, your morning routine begins in 5 minutes. Our objectives are clear: efficient brushing of teeth and a refreshing shower. Let's get started!",
+          " goals": [
+            "Brush teeth",
+            "Shower"
+          ]
+        },
+        "startSummary": {
+          "text": "Time for morning routine, Sir. Let's start with brush teeth."
+        },
+        "completionMessage": {
+          "text": "The morning routine is complete, Sir. Well done."
+        }
+      },
+      "completed": true
+    },
+    {
+      "dateKey": "2026-1-26",
+      "title": "workout",
+      "startHour": 12,
+      "startMin": 35,
+      "duration": 8,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "jogging",
+          "completed": true
+        }
+      ],
+      "id": 1769455529461,
+      "aiScript": {
+        "itemScripts": [
+          {
+            "text": "jogging",
+            "variations": [
+              "Get moving",
+              "Jogging time",
+              "Sweat it out",
+              "Lace up and go",
+              "Hit the pavement",
+              "Run wild",
+              "Go for a jog",
+              "Pump those endorphins"
+            ],
+            "success": "Kicking off with a jog, Sir! Next up is null, Sir."
+          }
+        ],
+        "preStartSummary": {
+          "name": "Jogging Workout Briefing",
+          "date": "Today",
+          "time": "5 minutes from now",
+          "goals": [
+            "Warm up the body with a brisk jog",
+            "Increase cardiovascular endurance"
+          ],
+          "note": "Please dress comfortably and bring water and any necessary gear, Sir."
+        },
+        "startSummary": {
+          "name": "Jogging Workout Start",
+          "message": "Time for workout, Sir. Let's start with jogging.",
+          "duration": "Estimated 20-30 minutes depending on pace"
+        },
+        "completionMessage": {
+          "name": "Workout Completion",
+          "message": "The workout is complete, Sir. Well done."
+        }
+      },
+      "completed": true
+    },
+    {
+      "dateKey": "2026-1-26",
+      "title": "morning routine",
+      "startHour": 18,
+      "startMin": 20,
+      "duration": 8,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        }
+      ],
+      "id": 1769476283002,
+      "aiScript": {
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "variations": [
+              "brush teeth",
+              "morning oral hygiene",
+              "toothbrush time",
+              "get those pearly whites",
+              "morning dental routine",
+              "keep it clean",
+              "brush and floss",
+              "fresh breath"
+            ],
+            "success": "Teeth brushed, Sir! Next up is shower, Sir."
+          },
+          {
+            "text": "shower",
+            "variations": [
+              "Shower time, Sir!",
+              "Time for a refresh, Sir!",
+              "Clean sweep, Sir!",
+              "Get scrubbed, Sir!",
+              "Rinse and repeat, Sir!"
+            ],
+            "success": "All clean, Sir! Next up is null."
+          }
+        ],
+        "preStartSummary": {
+          "message": "Sir, your morning routine begins in 5 minutes. We will handle brush teeth, shower.",
+          "goals": [
+            "Brush teeth to maintain oral hygiene",
+            "Take a refreshing shower for the day"
+          ]
+        },
+        "startSummary": {
+          "message": "Time for morning routine, Sir. Let's start with brush teeth."
+        },
+        "completionMessage": {
+          "message": "The morning routine is complete, Sir. Well done."
+        },
+        "preEndSummary": {
+          "message": "Excuse me Sir, you have five minutes remaining for your morning routine."
+        }
+      },
+      "completed": true
+    },
+    {
+      "dateKey": "2026-1-26",
+      "title": "morning routine",
+      "startHour": 19,
+      "startMin": 5,
+      "duration": 11,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        }
+      ],
+      "id": 1769478683046,
+      "aiScript": {
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "variations": [
+              "Brush teeth",
+              "Morning oral hygiene",
+              "Get those pearly whites sparkling",
+              "Time for a dental sesh",
+              "Freshen up with a toothbrush",
+              "Tackle that morning breath",
+              "Gotta get the plaque, Sir!",
+              "Tooth brushing time, buddy!"
+            ],
+            "success": "Teeth are squeaky clean! Next up is shower, Sir."
+          },
+          {
+            "text": "shower",
+            "variations": [
+              "shower time",
+              "morning rinse",
+              "get clean",
+              "freshen up",
+              "bathe",
+              "cleanse",
+              "invigorating start"
+            ],
+            "success": "Soap-tastic! Shower complete, Sir. Next up is null."
+          }
+        ],
+        "preStartSummary": "Sir, your morning routine begins in 5 minutes. We will handle brush teeth and shower.",
+        "startSummary": "Time for morning routine, Sir. Let's start with brushing teeth.",
+        "preEndSummary": "Excuse me Sir, you have five minutes remaining for your morning routine.",
+        "completionMessage": "The morning routine is complete, Sir. Well done."
+      },
+      "completed": true
+    },
+    {
+      "dateKey": "2026-1-26",
+      "title": "morning routine",
+      "startHour": 19,
+      "startMin": 29,
+      "duration": 7,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        }
+      ],
+      "id": 1769480303283,
+      "aiScript": {
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "variations": [
+              "brush my teeth",
+              "get my teeth brushed",
+              "time for oral hygiene",
+              "take care of my pearly whites",
+              "morning mouth maintenance",
+              "get the morning started right",
+              "first things first, brush those teeth",
+              "set a smiley tone with good oral health"
+            ],
+            "success": "Teeth brushed and ready to roll, Sir! Next up is shower, Sir."
+          },
+          {
+            "text": "shower",
+            "variations": [
+              "shower time",
+              "rinse and refresh",
+              "morning scrub down",
+              "rise and shine",
+              "water you waiting for?",
+              "clean slate",
+              "fresh start",
+              "bathtime bliss"
+            ],
+            "success": "Shower done, Sir! That completes the list. Next up is null, Sir."
+          }
+        ],
+        "preStartSummary": "Sir, your morning routine begins in 5 minutes. We'll be focusing on personal care and preparation to tackle the day ahead with confidence.",
+        "startSummary": "Let's get started! Your first task is to brush those teeth for a sparkling smile.",
+        "preEndSummary": "Only 5 minutes remaining, Sir! Remember, our objective is to complete your morning routine and set yourself up for success.",
+        "completionMessage": "Congratulations, Sir! You've completed your morning routine. The rest of the day is yours to command, with a fresh start and a clear schedule ahead."
+      },
+      "completed": true
+    }
+  ],
+  "2026-1-27": [
+    {
+      "dateKey": "2026-1-27",
+      "title": "morning routine",
+      "startHour": 13,
+      "startMin": 28,
+      "duration": 8,
+      "type": "checklist",
+      "color": "#22c55e",
+      "occupiesTime": true,
+      "items": [
+        {
+          "text": "brush teeth",
+          "completed": true
+        },
+        {
+          "text": "shower",
+          "completed": true
+        }
+      ],
+      "id": 1769544697417,
+      "aiScript": {
+        "itemScripts": [
+          {
+            "text": "brush teeth",
+            "variations": [
+              "brush teeth"
+            ],
+            "success": "Well done on brush teeth, Sir. Next up is shower."
+          },
+          {
+            "text": "shower",
+            "variations": [
+              "Refreshing your senses with a revitalizing shower experience.",
+              "Sir, the morning's almost complete – indulge in a soothing rinse.",
+              "Cleanse and invigorate with a satisfying shower Sir.",
+              "The perfect ending to an excellent morning routine: a rejuvenating shower.",
+              "Shine on Sir! A refreshing shower to seal the day's deal."
+            ],
+            "success": "Sir, your daily checklist is now complete!"
+          }
+        ],
+        "preStartSummary": "Sir, your morning routine begins in 5 minutes. We'll be focusing on personal care and preparation for the day ahead.",
+        "startSummary": "Briefing initiated! First mission: Brush those teeth, Sir!",
+        "preEndSummary": "Time's ticking, Sir! Only 5 minutes remain before completion of your morning routine. Stay focused!",
+        "completionMessage": "Mission accomplished, Sir! Your morning routine is complete. You've got a clear day ahead."
+      },
+      "completed": true
+    }
+  ]
+}

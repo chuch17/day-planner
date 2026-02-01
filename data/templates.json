@@ -1,0 +1,9 @@
+[
+  {
+    "title": "drink water",
+    "type": "routine",
+    "color": "#65c0d7",
+    "duration": 60,
+    "occupiesTime": false
+  }
+]

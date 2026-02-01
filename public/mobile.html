@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jarvis Satellite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mobile-Specific Overrides */
+        body {
+            background: #0f172a;
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+        }
+
+        .mobile-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+            position: relative;
+        }
+
+        /* Futuristic Header */
+        .mobile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .mobile-header h1 {
+            font-size: 1.2rem;
+            color: #3b82f6;
+            letter-spacing: 2px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        /* Current Mission Card */
+        #mobile-mission-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: slideInUp 0.5s ease-out;
+        }
+
+        .mission-label {
+            font-size: 0.7rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .mission-title {
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .mission-progress {
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .mission-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6, #6366f1);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        /* Neural Orb Centerpiece */
+        .orb-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        #mobile-voice-orb {
+            width: 120px;
+            height: 120px;
+            background: radial-gradient(circle, #3b82f6, #1d4ed8);
+            border-radius: 50%;
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 10;
+        }
+
+        #mobile-voice-orb i {
+            font-size: 40px;
+            color: white;
+        }
+
+        #mobile-voice-orb.listening {
+            animation: pulse-red 1.5s infinite;
+            background: radial-gradient(circle, #ef4444, #b91c1c);
+        }
+
+        #mobile-voice-orb.speaking {
+            animation: rotate 2s infinite linear;
+            background: radial-gradient(circle, #10b981, #047857);
+        }
+
+        /* Chat History (Compact) */
+        #mobile-chat-log {
+            height: 150px;
+            overflow-y: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            mask-image: linear-gradient(to bottom, transparent, black 20%);
+        }
+
+        .mobile-msg {
+            padding: 10px 15px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            max-width: 85%;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .mobile-msg.ai {
+            background: rgba(59, 130, 246, 0.1);
+            color: #fff;
+            align-self: flex-start;
+            border-bottom-left-radius: 2px;
+        }
+
+        .mobile-msg.user {
+            background: #3b82f6;
+            color: #fff;
+            align-self: flex-end;
+            border-bottom-right-radius: 2px;
+        }
+
+        /* Animations */
+        @keyframes pulse-red {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { transform: scale(1.1); box-shadow: 0 0 0 30px rgba(239, 68, 68, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes slideInUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Hidden elements from desktop */
+        .calendar-section, .dashboard-section, #checklist-dropdown, .modal {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-container">
+        <header class="mobile-header">
+            <h1>Jarvis Satellite</h1>
+            <div id="connection-status" style="color: #10b981; font-size: 0.7rem;">● ONLINE</div>
+        </header>
+
+        <div id="mobile-mission-card">
+            <span class="mission-label">Current Mission</span>
+            <div class="mission-title" id="current-task-name">Awaiting Orders, Sir.</div>
+            <div class="mission-progress">
+                <div class="mission-progress-fill" id="task-progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="orb-container">
+            <div id="mobile-voice-orb">
+                <i class="fas fa-microphone"></i>
+            </div>
+            <p style="color: #94a3b8; font-size: 0.8rem; margin-top: 20px;" id="orb-status">Tap to speak or say "Hey Jarvis"</p>
+        </div>
+
+        <div id="mobile-chat-log">
+            <!-- Messages appear here -->
+        </div>
+    </div>
+
+    <!-- We'll use a lightweight version of our scripts -->
+    <script src="notifications.js"></script>
+    <script src="voice.js"></script>
+    <script>
+        // Mobile Bridge Logic
+        const mobileOrb = document.getElementById('mobile-voice-orb');
+        const taskName = document.getElementById('current-task-name');
+        const progressBar = document.getElementById('task-progress-bar');
+        const chatLog = document.getElementById('mobile-chat-log');
+
+        // Override the desktop voice orb with the mobile one
+        window.voiceOrb = mobileOrb;
+
+        // Listen for Neural Pulse from the Trojan Horse Shell
+        window.addEventListener('message', (event) => {
+            if (event.data && event.data.type === 'WAKE_WORD_DETECTED') {
+                console.log('[Mobile] Neural Pulse Received: Jarvis detected.');
+                mobileOrb.click(); // Trigger microphone
+            }
+        });
+
+        // Mobile voice handler: send transcript to API and display response
+        window.sendMobileVoiceMessage = async (transcript) => {
+            if (!transcript?.trim()) return;
+            if (typeof window.addMessageToChat === 'function') {
+                window.addMessageToChat(transcript, 'user');
+            }
+            mobileOrb.classList.add('speaking');
+            try {
+                const res = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: transcript })
+                });
+                const data = await res.json();
+                const reply = data.reply || 'No response.';
+                if (typeof window.addMessageToChat === 'function') {
+                    window.addMessageToChat(reply, 'ai');
+                }
+                if (window.notifier) window.notifier.speak(reply);
+            } catch (e) {
+                const err = e.message || 'Connection failed.';
+                if (typeof window.addMessageToChat === 'function') {
+                    window.addMessageToChat(err, 'ai');
+                }
+            }
+            mobileOrb.classList.remove('speaking');
+        };
+
+        // Simple Chat Logger for Mobile
+        const originalAddMessage = window.addMessageToChat;
+        window.addMessageToChat = (text, sender) => {
+            const msg = document.createElement('div');
+            msg.className = `mobile-msg ${sender}`;
+            msg.innerText = text;
+            chatLog.appendChild(msg);
+            chatLog.scrollTop = chatLog.scrollHeight;
+            if (originalAddMessage) originalAddMessage(text, sender);
+        };
+
+        // Update Mission Card from Desktop State
+        const updateMissionCard = () => {
+            // This will be populated by fetching from the server
+            fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: "status update" })
+            })
+            .then(res => res.json())
+            .then(data => {
+                // Logic to extract current task from AI response or separate endpoint
+            });
+        };
+
+        // Initial setup
+        setInterval(updateMissionCard, 10000);
+    </script>
+</body>
+</html>

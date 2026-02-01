@@ -1,0 +1,10 @@
+{
+  "appId": "com.jarvis.phone",
+  "appName": "JarvisPhone",
+  "webDir": "public",
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "http://10.0.2.2:3022/mobile.html",
+    "cleartext": true
+  }
+}

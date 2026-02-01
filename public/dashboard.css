@@ -1,0 +1,48 @@
+/* Next Event Card Styling */
+.next-event-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    color: #333;
+    padding: 15px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px; /* Spacing below active card */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.next-event-card.hidden {
+    display: none;
+}
+
+.next-indicator {
+    color: #f59e0b; /* Amber */
+    font-weight: 600;
+    font-size: 0.75rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.next-event-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.mini-timer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mini-timer span {
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #6332c5;
+}
+
+.mini-timer small {
+    color: #888;
+    font-size: 0.8rem;
+}

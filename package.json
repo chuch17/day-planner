@@ -1,0 +1,24 @@
+{
+  "name": "day-planner",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@capacitor/android": "^8.0.2",
+    "@capacitor/cli": "^8.0.2",
+    "@capacitor/core": "^8.0.2",
+    "@google/genai": "^1.32.0",
+    "@picovoice/porcupine-node": "^4.0.1",
+    "@picovoice/pvrecorder-node": "^1.2.8",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "ws": "^8.19.0"
+  }
+}

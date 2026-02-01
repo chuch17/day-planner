@@ -1,0 +1,166 @@
+/* Priority Organizer Panel */
+.priority-section {
+    width: 25%;
+    background: #1e293b; 
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #334155;
+    height: 100%;
+}
+
+.priority-half {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Split 50/50 initially */
+    overflow: hidden;
+}
+
+.active-half {
+    border-bottom: 2px solid #334155;
+}
+
+.history-half {
+    background: #0f172a; /* Slightly darker for history */
+}
+
+.priority-header-main {
+    padding: 15px;
+    border-bottom: 1px solid #334155;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e293b;
+    z-index: 10;
+}
+
+.history-header {
+    background: #0f172a;
+}
+
+.priority-header-main h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.live-dot {
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #22c55e;
+    animation: pulse 2s infinite;
+}
+
+.priority-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.empty-priority {
+    text-align: center;
+    color: #475569;
+    font-size: 0.85rem;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+/* Priority Item Cards */
+.priority-item {
+    background: #334155;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.priority-index {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #64748b;
+    width: 20px;
+    text-align: center;
+}
+
+.priority-content {
+    flex: 1;
+}
+
+.priority-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+    font-size: 0.65rem;
+}
+
+.priority-type {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1px 5px;
+    border-radius: 3px;
+}
+
+.type-start { background: #0ea5e9; color: white; }
+.type-checkin { background: #eab308; color: black; }
+.type-end { background: #ef4444; color: white; }
+
+.priority-status-text {
+    font-family: monospace;
+    color: #cbd5e1;
+}
+
+.priority-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.priority-icon {
+    font-size: 1.1rem;
+    color: #64748b;
+}
+
+/* States */
+.priority-item.scheduled { border-left-color: #94a3b8; opacity: 0.7; }
+.priority-item.loading { border-left-color: #3b82f6; opacity: 0.9; }
+.priority-item.ready { border-left-color: #22c55e; opacity: 1; }
+.priority-item.executing { 
+    border-left-color: #3b82f6; 
+    background: #1e293b;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.2);
+    transform: scale(1.02);
+    z-index: 5;
+}
+.priority-item.executing .priority-icon { color: #3b82f6; }
+
+.priority-item.waiting { 
+    border-left-color: #f59e0b; 
+    animation: pulse-amber 2s infinite;
+}
+.priority-item.waiting .priority-icon { color: #f59e0b; }
+
+.priority-item.completed { 
+    border-left-color: #64748b; 
+    opacity: 0.5; 
+    background: #1e293b;
+}
+.priority-item.completed .priority-title {
+    text-decoration: line-through;
+}
+
+@keyframes pulse-amber {
+    0% { box-shadow: 0 0 0 rgba(245, 158, 11, 0); }
+    50% { box-shadow: 0 0 10px rgba(245, 158, 11, 0.3); }
+    100% { box-shadow: 0 0 0 rgba(245, 158, 11, 0); }
+}
