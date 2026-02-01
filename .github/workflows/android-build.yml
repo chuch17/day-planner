@@ -17,9 +17,9 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Shell Tools
+      - name: Install Dependencies
         run: |
-          npm install @capacitor/core @capacitor/cli @capacitor/android --legacy-peer-deps
+          npm install --legacy-peer-deps
 
       - name: Set up Java
         uses: actions/setup-java@v4
@@ -29,10 +29,10 @@ jobs:
 
       - name: Build Android Project
         run: |
-          # 1. Sync the web assets
-          npx capacitor sync android
+          # 1. Sync the web assets using the local binary directly
+          ./node_modules/.bin/cap sync android
           
-          # 2. Build the APK
+          # 2. Go into android folder and build
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug --stacktrace
