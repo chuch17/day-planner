@@ -19,9 +19,9 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          npm install --no-package-lock
           npm install @capacitor/core @capacitor/cli @capacitor/android
           npm install @picovoice/porcupine-android @picovoice/pvrecorder-android
-          npm install
 
       - name: Initialize Capacitor
         run: |
