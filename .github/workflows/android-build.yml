@@ -30,7 +30,7 @@ jobs:
       - name: Build Android Project
         run: |
           npx cap sync android
-          cd android && ./gradlew assembleDebug
+          cd android && chmod +x gradlew && ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
