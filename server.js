@@ -70,8 +70,8 @@ function stopWakeWord() {
     }
 }
 
-// Start wake word engine
-startWakeWord();
+// Start wake word engine (DISABLED FOR NOW)
+// startWakeWord();
 
 // Middleware to parse JSON bodies
 app.use(express.json());
@@ -80,8 +80,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Data file paths
 const EVENTS_FILE = path.join(__dirname, 'data', 'events.json');
 const TEMPLATES_FILE = path.join(__dirname, 'data', 'templates.json');
+const CHAT_HISTORY_FILE = path.join(__dirname, 'data', 'chat_history.json');
 const PIPER_DIR = path.join(__dirname, 'piper');
 const PUBLIC_DIR = path.join(__dirname, 'public');
+
+// Ensure data directory exists
+const DATA_DIR = path.join(__dirname, 'data');
+if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR);
 
 // Ensure output directory exists (public)
 if (!fs.existsSync(PUBLIC_DIR)) fs.mkdirSync(PUBLIC_DIR);
@@ -111,7 +116,30 @@ const writeData = (filePath, data) => {
     }
 };
 
+// Chat History Persistence
+let chatHistory = readData(CHAT_HISTORY_FILE);
+if (!Array.isArray(chatHistory)) chatHistory = [];
+
+function saveChatMessage(text, sender) {
+    chatHistory.push({ text, sender, timestamp: new Date().toISOString() });
+    // Keep last 100 messages
+    if (chatHistory.length > 100) chatHistory.shift();
+    writeData(CHAT_HISTORY_FILE, chatHistory);
+    
+    // Broadcast to all clients
+    wss.clients.forEach(client => {
+        if (client.readyState === WebSocket.OPEN) {
+            client.send(JSON.stringify({ type: 'NEW_CHAT_MESSAGE', data: { text, sender } }));
+        }
+    });
+}
+
 // --- API Routes ---
+
+// Get chat history
+app.get('/api/chat-history', (req, res) => {
+    res.json(chatHistory);
+});
 
 // Endpoint to Forge a single item script (Sequential & Autonomous)
 app.post('/api/forge-item', async (req, res) => {
@@ -223,8 +251,6 @@ app.post('/api/forge-summaries', async (req, res) => {
 });
 
 const os = require('os');
-
-// ... (skipping to speak route)
 
 // PIPER TTS ENDPOINT
 app.post('/api/speak', (req, res) => {
@@ -437,18 +463,23 @@ app.post('/api/chat', async (req, res) => {
         const aiContent = response.data.message.content;
         console.log("Ollama Response:", aiContent);
 
+        // Save User Message
+        saveChatMessage(userMessage, 'user');
+
         // 4. Parse Response
         try {
             const parsed = JSON.parse(aiContent);
             
             // If the AI just sent a reply text inside JSON
             if (parsed.reply) {
+                saveChatMessage(parsed.reply, 'ai');
                 return res.json({ reply: parsed.reply });
             }
             
             // If the AI sent an action (create_event, etc.)
             // We'll wrap it in our standard format for the frontend
             if (parsed.type) {
+                saveChatMessage("On it.", 'ai');
                 return res.json({ 
                     reply: "On it.", 
                     action: parsed 
@@ -456,10 +487,13 @@ app.post('/api/chat', async (req, res) => {
             }
 
             // Fallback if structure is weird
-             return res.json({ reply: typeof parsed === 'string' ? parsed : JSON.stringify(parsed) });
+            const fallbackReply = typeof parsed === 'string' ? parsed : JSON.stringify(parsed);
+            saveChatMessage(fallbackReply, 'ai');
+            return res.json({ reply: fallbackReply });
 
         } catch (e) {
             // If not JSON, send raw text
+            saveChatMessage(aiContent, 'ai');
             return res.json({ reply: aiContent });
         }
 

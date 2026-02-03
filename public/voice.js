@@ -22,6 +22,16 @@ const setupWakeWordWS = () => {
                 voiceOrb.classList.add('wake-word-flash');
                 setTimeout(() => voiceOrb.classList.remove('wake-word-flash'), 1000);
             }
+        } else if (data.type === 'NEW_CHAT_MESSAGE') {
+            console.log('[ChatSync] New message received via WebSocket.');
+            if (typeof window.addMessageToChat === 'function') {
+                // Check if message already exists to avoid duplicates
+                const history = document.getElementById('chat-history');
+                const lastMsg = history?.lastElementChild?.innerText;
+                if (lastMsg !== data.data.text) {
+                    window.addMessageToChat(data.data.text, data.data.sender, true); // true = skip saving back to server
+                }
+            }
         }
     };
 

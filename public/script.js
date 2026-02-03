@@ -270,7 +270,7 @@ const chatInput = document.getElementById("chat-input");
 const chatSendBtn = document.getElementById("chat-send-btn");
 const chatHistory = document.getElementById("chat-history");
 
-const addMessageToChat = (text, sender) => {
+const addMessageToChat = (text, sender, isSync = false) => {
     const msgDiv = document.createElement("div");
     msgDiv.classList.add("chat-msg", sender);
     
@@ -294,6 +294,19 @@ const addMessageToChat = (text, sender) => {
         window.renderChatChecklistWidget();
     }
 };
+
+// Load chat history on startup
+const fetchChatHistory = async () => {
+    try {
+        const res = await fetch('/api/chat-history');
+        const history = await res.json();
+        chatHistory.innerHTML = ''; // Clear initial greeting
+        history.forEach(msg => addMessageToChat(msg.text, msg.sender, true));
+    } catch (e) {
+        console.error('Failed to load chat history:', e);
+    }
+};
+fetchChatHistory();
 
 const handleChatSubmit = async () => {
     const rawText = chatInput.value.trim();
